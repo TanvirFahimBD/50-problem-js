@@ -1,19 +1,20 @@
-//Coding challenge #1. Coding challenge #1: Print numbers from 1 to 10
+//! Coding challenge #1. Coding challenge #1: Print numbers from 1 to 10
 for (var i = 1; i <= 10; i++) {
     console.log(i);
 }
 
-//Coding challenge #2. Coding challenge #2: Print the odd numbers less than 100
+//! Coding challenge #2. Coding challenge #2: Print the odd numbers less than 100
 for (var i = 1; i <= 100; i += 2) {
     console.log(i);
 }
-// Coding challenge #3: Print the multiplication table with 7
+
+//! Coding challenge #3: Print the multiplication table with 7
 for (var i = 1; i <= 10; i++) {
     var row = "7 * " + i + " = " + 7 * i;
     console.log(row);
 }
 
-// Coding challenge #4: Print all the multiplication tables with numbers from 1 to 10
+//! Coding challenge #4: Print all the multiplication tables with numbers from 1 to 10
 for (var i = 1; i <= 10; i++) {
     printTable(i);
     console.log("");
@@ -26,7 +27,7 @@ function printTable(n) {
     }
 }
 
-// Coding challenge #5: Calculate the sum of numbers from 1 to 10
+//!  Coding challenge #5: Calculate the sum of numbers from 1 to 10
 var sum = 0;
 
 for (var i = 1; i <= 10; i++) {
@@ -35,7 +36,7 @@ for (var i = 1; i <= 10; i++) {
 
 console.log(sum);
 
-// Coding challenge #6: Calculate 10!
+//!  Coding challenge #6: Calculate 10!
 var prod = 1;
 
 for (var i = 1; i <= 10; i++) {
@@ -43,7 +44,8 @@ for (var i = 1; i <= 10; i++) {
 }
 
 console.log(prod);
-// Coding challenge #7: Calculate the sum of odd numbers greater than 10 and less than 30
+
+//!  Coding challenge #7: Calculate the sum of odd numbers greater than 10 and less than 30
 var sum = 0;
 
 for (var i = 11; i <= 30; i += 2) {
@@ -52,7 +54,7 @@ for (var i = 11; i <= 30; i += 2) {
 
 console.log(sum);
 
-// Coding challenge #8: Create a function that will convert from Celsius to Fahrenheit
+//!  Coding challenge #8: Create a function that will convert from Celsius to Fahrenheit
 function celsiusToFahrenheit(n) {
     return n * 1.8 + 32;
 }
@@ -60,7 +62,7 @@ function celsiusToFahrenheit(n) {
 var r = celsiusToFahrenheit(20);
 console.log(r);
 
-// Coding challenge #9: Create a function that will convert from Fahrenheit to Celsius
+//!  Coding challenge #9: Create a function that will convert from Fahrenheit to Celsius
 function fahrenheitToCelsius(n) {
     return (n - 32) / 1.8;
 }
@@ -68,7 +70,7 @@ function fahrenheitToCelsius(n) {
 var r = fahrenheitToCelsius(68);
 console.log(r);
 
-// Coding challenge #10: Calculate the sum of numbers in an array of numbers
+//!  Coding challenge #10: Calculate the sum of numbers in an array of numbers
 function sumArray(ar) {
     var sum = 0;
 
@@ -83,7 +85,7 @@ var ar = [2, 3, -1, 5, 7, 9, 10, 15, 95];
 var sum = sumArray(ar);
 console.log(sum);
 
-// Coding challenge #11: Calculate the average of the numbers in an array of numbers
+//! Coding challenge #11: Calculate the average of the numbers in an array of numbers
 
 function averageArray(ar) {
     var n = ar.length;
@@ -101,7 +103,7 @@ var avg = averageArray(ar);
 
 console.log("Average: ", avg);
 
-// Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
+//! Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
 function getPositives(ar) {
     var ar2 = [];
 
@@ -121,7 +123,7 @@ var ar2 = getPositives(ar);
 
 console.log(ar2);
 
-// Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
+//!  Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
 function getPositives(ar) {
     var ar2 = [];
 
@@ -139,7 +141,7 @@ var ar2 = getPositives(ar);
 
 console.log(ar2);
 
-// Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
+//!  Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
 function getPositives(ar) {
     return ar.filter(el => el >= 0);
 }
@@ -148,7 +150,7 @@ var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
 var ar2 = getPositives(ar);
 console.log(ar2);
 
-// Coding challenge #13: Find the maximum number in an array of numbers
+//!  Coding challenge #13: Find the maximum number in an array of numbers
 function findMax(ar) {
     var max = ar[0];
 
@@ -164,7 +166,8 @@ function findMax(ar) {
 var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
 var max = findMax(ar);
 console.log("Max: ", max);
-// Coding challenge #14: Print the first 10 Fibonacci numbers without recursion
+
+//!  Coding challenge #14: Print the first 10 Fibonacci numbers without recursion
 var f0 = 0;
 console.log(f0);
 
@@ -179,7 +182,7 @@ for (var i = 2; i < 10; i++) {
     f1 = fi;
 }
 
-// Coding challenge #15: Create a function that will find the nth Fibonacci number using recursion
+//!  Coding challenge #15: Create a function that will find the nth Fibonacci number using recursion
 function findFibonacci(n) {
     if (n == 0)
         return 0;
@@ -193,7 +196,7 @@ function findFibonacci(n) {
 var n = findFibonacci(10);
 console.log(n);
 
-// Coding challenge #16: Create a function that will return a Boolean specifying if a number is prime
+//!  Coding challenge #16: Create a function that will return a Boolean specifying if a number is prime
 function isPrime(n) {
     if (n < 2)
         return false;
@@ -218,7 +221,7 @@ console.log(4, " is prime? ", isPrime(4));
 console.log(5, " is prime? ", isPrime(5));
 console.log(9, " is prime? ", isPrime(9));
 
-// Coding challenge #17: Calculate the sum of digits of a positive integer number
+//!  Coding challenge #17: Calculate the sum of digits of a positive integer number
 function sumDigits(n) {
     var s = n.toString();
     var sum = 0;
@@ -234,7 +237,7 @@ function sumDigits(n) {
 var sum = sumDigits(1235231);
 console.log("Sum: ", sum);
 
-// Coding challenge #18: Print the first 100 prime numbers
+//! Coding challenge #18: Print the first 100 prime numbers
 printPrimes(100);
 
 // Function prints the first nPrimes numbers
@@ -271,7 +274,7 @@ function isPrime(n) {
 
     return true;
 }
-// Coding challenge #19: Create a function that will return in an array the first "nPrimes" prime numbers greater than a particular number "startAt"
+//!  Coding challenge #19: Create a function that will return in an array the first "nPrimes" prime numbers greater than a particular number "startAt"
 console.log(getPrimes(10, 100));
 
 function getPrimes(nPrimes, startAt) {
@@ -309,7 +312,7 @@ function isPrime(n) {
     return true;
 }
 
-// Coding challenge #20: Rotate an array to the left 1 position
+//!  Coding challenge #20: Rotate an array to the left 1 position
 var ar = [1, 2, 3];
 rotateLeft(ar);
 console.log(ar);
@@ -319,7 +322,7 @@ function rotateLeft(ar) {
     ar.push(first);
 }
 
-// Coding challenge #21: Rotate an array to the right 1 position
+//!  Coding challenge #21: Rotate an array to the right 1 position
 var ar = [1, 2, 3];
 rotateRight(ar);
 console.log(ar);
@@ -328,7 +331,8 @@ function rotateRight(ar) {
     var last = ar.pop();
     ar.unshift(last);
 }
-// Coding challenge #22: Reverse an array
+
+//!  Coding challenge #22: Reverse an array
 var ar = [1, 2, 3];
 var ar2 = reverseArray(ar);
 console.log(ar2);
@@ -342,7 +346,8 @@ function reverseArray(ar) {
 
     return ar2;
 }
-// Coding challenge #23: Reverse a string
+
+//!  Coding challenge #23: Reverse a string
 var s = reverseString("JavaScript");
 console.log(s);
 
@@ -357,7 +362,7 @@ function reverseString(s) {
     return s2;
 }
 
-// Coding challenge #24: Create a function that will merge two arrays and return the result as a new array
+//!  Coding challenge #24: Create a function that will merge two arrays and return the result as a new array
 var ar1 = [1, 2, 3];
 var ar2 = [4, 5, 6];
 
@@ -378,7 +383,7 @@ function mergeArrays(ar1, ar2) {
     return ar;
 }
 
-// Coding challenge #25: Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both
+//!  Coding challenge #25: Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both
 var ar1 = [1, 2, 3, 10, 5, 3, 14];
 var ar2 = [1, 4, 5, 6, 14];
 
@@ -403,7 +408,7 @@ function mergeExclusive(ar1, ar2) {
     return ar;
 }
 
-// Coding challenge #26: Create a function that will receive two arrays and will return an array with elements that are in the first array but not in the second
+//!  Coding challenge #26: Create a function that will receive two arrays and will return an array with elements that are in the first array but not in the second
 var ar1 = [1, 2, 3, 10, 5, 3, 14];
 var ar2 = [-1, 4, 5, 6, 14];
 
@@ -421,7 +426,8 @@ function mergeLeft(ar1, ar2) {
 
     return ar;
 }
-// Coding challenge #27: Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
+
+//!  Coding challenge #27: Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
 // Solution 1
 var ar = getDistinctElements([1, 2, 3, 6, -1, 2, 9, 7, 10, -1, 100]);
 console.log(ar);
@@ -474,7 +480,7 @@ function isInArray(n, ar, fromIndex, toIndex) {
     return false;
 }
 
-// Coding challenge #28: Calculate the sum of first 100 prime numbers
+//!  Coding challenge #28: Calculate the sum of first 100 prime numbers
 var n = 10;
 console.log("Sum of first ", n, " primes is ", sumPrimes(10));
 
@@ -514,7 +520,7 @@ function isPrime(n) {
     return true;
 }
 
-// Coding challenge #29: Print the distance between the first 100 prime numbers
+//!  Coding challenge #29: Print the distance between the first 100 prime numbers
 printDistances(100);
 
 // Print distances between the first n prime numbers
@@ -554,7 +560,7 @@ function isPrime(n) {
     return true;
 }
 
-// Coding challenge #30-a: Create a function that will add two positive numbers of indefinite size. The numbers are received as strings and the result should be also provided as string.
+//!  Coding challenge #30-a: Create a function that will add two positive numbers of indefinite size. The numbers are received as strings and the result should be also provided as string.
 // Solution 1
 var n1 = "2909034221912398942349";
 var n2 = "1290923909029309499";
@@ -629,7 +635,7 @@ function add(sNumber1, sNumber2) {
     return s;
 }
 
-// Coding challenge #31a. Create a function that will return the number of words in a text
+//!  Coding challenge #31a. Create a function that will return the number of words in a text
 // Solution 1
 function countWords(text) {
     var wasSeparator = true;
@@ -698,7 +704,7 @@ console.log(countWords("     JavaScript"));
 console.log(countWords("    JavaScript is cool      "));
 console.log(countWords("I like to learn JavaScript with Lead Educare"));
 
-// Coding challenge #32. Create a function that will capitalize the first letter of each word in a text
+//!  Coding challenge #32. Create a function that will capitalize the first letter of each word in a text
 
 console.log(captializeWords("Create a function that will capitalize the first letter of each word in a text"));
 
@@ -724,7 +730,7 @@ function isSeparator(c) {
     return separators.includes(c);
 }
 
-// Coding challenge #33. Calculate the sum of numbers received in a comma delimited string
+//!  Coding challenge #33. Calculate the sum of numbers received in a comma delimited string
 console.log(sumCSV("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"));
 
 function sumCSV(s) {
@@ -739,7 +745,7 @@ function sumCSV(s) {
     return sum;
 }
 
-// Coding challenge #34. Create a function that will return an array with words inside a text
+//!  Coding challenge #34. Create a function that will return an array with words inside a text
 
 var text = "Create a function, that will return an array (of string), with the words inside the text";
 
@@ -772,7 +778,7 @@ function isSeparator(c) {
     return separators.includes(c);
 }
 
-// Coding challenge #35. Create a function to convert a CSV text to a “bi-dimensional” array
+//!  Coding challenge #35. Create a function to convert a CSV text to a “bi-dimensional” array
 
 var data = "John;Smith;954-000-0000\nMich;Tiger;305-000-0000\nMonique;Vasquez;103-000-0000";
 
@@ -789,14 +795,15 @@ function csvToArray(data) {
 
     return arLines;
 }
-// Coding challenge #36. Create a function that converts a string to an array of characters
+
+//!  Coding challenge #36. Create a function that converts a string to an array of characters
 console.log(getChars("I like JavaScript"));
 
 function getChars(s) {
     return Array.from(s);
 }
 
-// Coding challenge #37. Create a function that will convert a string in an array containing the ASCII codes of each character
+//!  Coding challenge #37. Create a function that will convert a string in an array containing the ASCII codes of each character
 console.log(getCharCodes("I like JavaScript"));
 
 function getCharCodes(s) {
@@ -809,14 +816,15 @@ function getCharCodes(s) {
 
     return ar;
 }
-// Coding challenge #38. Create a function that will convert an array containing ASCII codes in a string
+
+//!  Coding challenge #38. Create a function that will convert an array containing ASCII codes in a string
 console.log(codesToString([73, 32, 108, 105, 107, 101, 32, 74, 97, 118, 97, 83, 99, 114, 105, 112, 116]));
 
 function codesToString(ar) {
     return String.fromCharCode(...ar);
 }
 
-// Coding challenge #39. Implement the Caesar cypher
+//!  Coding challenge #39. Implement the Caesar cypher
 var text = "I LOVE JAVASCRIPT";
 var textEnc = encrypt(text, 13);
 var textDec = decrypt(textEnc, 13);
@@ -862,7 +870,7 @@ function mod(n, p) {
     return n % p;
 }
 
-// Coding challenge #40. Implement the bubble sort algorithm for an array of numbers
+//!  Coding challenge #40. Implement the bubble sort algorithm for an array of numbers
 var ar = [23, 1000, 1, -1, 8, 3];
 console.log(ar);
 bubbleSort(ar);
@@ -886,7 +894,8 @@ function bubbleSort(ar) {
         }
     }
 }
-// Coding challenge #41. Create a function to calculate the distance between two points defined by their x, y coordinates
+
+//!  Coding challenge #41. Create a function to calculate the distance between two points defined by their x, y coordinates
 console.log(getDistance(100, 100, 400, 300));
 
 function getDistance(x1, y1, x2, y2) {
@@ -896,7 +905,7 @@ function getDistance(x1, y1, x2, y2) {
     return Math.sqrt(l1 * l1 + l2 * l2);
 }
 
-// Coding challenge #42. Create a function that will return a Boolean value indicating if two circles defined by center coordinates and radius are intersecting
+//!  Coding challenge #42. Create a function that will return a Boolean value indicating if two circles defined by center coordinates and radius are intersecting
 console.log(collisionCircleCircle(200, 200, 100, 300, 300, 50));
 
 function collisionCircleCircle(circle1X, circle1Y, circle1R, circle2X, circle2Y, circle2R) {
@@ -911,7 +920,7 @@ function getDistance(x1, y1, x2, y2) {
     return Math.sqrt(l1 * l1 + l2 * l2);
 }
 
-// Coding challenge 43. Create a function that will receive a bi-dimensional array as argument and a number and will extract as a unidimensional array the column specified by the number
+//!  Coding challenge 43. Create a function that will receive a bi-dimensional array as argument and a number and will extract as a unidimensional array the column specified by the number
 var ar = [["John", 120],
 ["Jane", 115],
 ["Thomas", 123],
@@ -931,13 +940,15 @@ function extractCol(ar, colNo) {
 
     return arCol;
 }
-// Coding challenge #44. Create a function that will convert a string containing a binary number into a number
+
+//!  Coding challenge #44. Create a function that will convert a string containing a binary number into a number
 console.log(binaryToNumber("11111111"));
 
 function binaryToNumber(sBinary) {
     return parseInt(sBinary, 2);
 }
-// Coding challenge #45. Create a function to calculate the sum of all the numbers in a jagged array (array contains numbers or other arrays of numbers on an unlimited number of levels)
+
+//!  Coding challenge #45. Create a function to calculate the sum of all the numbers in a jagged array (array contains numbers or other arrays of numbers on an unlimited number of levels)
 var ar = [1, 2, [15, [23], [5, 12]], [100]];
 
 console.log(sumArray(ar));
@@ -956,7 +967,7 @@ function sumArray(ar) {
     return sum;
 }
 
-// Coding challenge #46-a. Find the maximum number in a jagged array of numbers or array of numbers
+//!  Coding challenge #46-a. Find the maximum number in a jagged array of numbers or array of numbers
 // Solution 1
 
 var ar = [2, 4, 10, [12, 4, [100, 99], 4], [3, 2, 99], 0];
@@ -1027,7 +1038,7 @@ function findMax(arElements) {
     return max;
 }
 
-// Coding challenge #47. Deep copy a jagged array with numbers or other arrays in a new array
+//!  Coding challenge #47. Deep copy a jagged array with numbers or other arrays in a new array
 var ar1 = [2, 4, 10, [12, 4, [100, 99], 4], [3, 2, 99], 0];
 var ar2 = copyArray(ar1);
 
@@ -1047,7 +1058,7 @@ function copyArray(ar) {
     return ar2;
 }
 
-// Coding challenge #48. Create a function to return the longest word(s) in a string
+//!  Coding challenge #48. Create a function to return the longest word(s) in a string
 
 var text = "Create a function to return the longest word(s) in a sentance.";
 
@@ -1113,7 +1124,7 @@ function isSeparator(c) {
     return separators.includes(c);
 }
 
-// Coding challenge #49. Shuffle an array of strings
+//!  Coding challenge #49. Shuffle an array of strings
 var ar = ["Shuffle", "an", "array", "of", "strings"];
 
 console.log(shuffleArray(ar));
@@ -1136,7 +1147,7 @@ function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Coding challenge #50. Create a function that will receive n as argument and return an array of n unique random numbers from 1 to n.
+//!  Coding challenge #50. Create a function that will receive n as argument and return an array of n unique random numbers from 1 to n.
 console.log(getRandomNumbers(10));
 
 function getRandomNumbers(n) {
@@ -1169,7 +1180,7 @@ function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Coding challenge #51. Find the frequency of characters inside a string. Return the result as an array of objects. Each object has 2 fields: character and number of occurrences.
+//!  Coding challenge #51. Find the frequency of characters inside a string. Return the result as an array of objects. Each object has 2 fields: character and number of occurrences.
 
 var ar = getCharFrequency("Find the frequency of characters inside a string");
 console.log(JSON.stringify(ar));
@@ -1194,7 +1205,7 @@ function updateFrequency(ar, chr) {
     ar.push({ chr: chr, count: 1 });
 }
 
-// Coding challenge #52. Calculate Fibonacci(500) with high precision (all decimals)
+//!  Coding challenge #52. Calculate Fibonacci(500) with high precision (all decimals)
 console.log(fibonacci(500));
 
 function fibonacci(n) {
@@ -1242,7 +1253,7 @@ function add(sNumber1, sNumber2) {
 
     return s;
 }
-// Coding challenge #53. Calculate 70! with high precision (all digits)
+//!  Coding challenge #53. Calculate 70! with high precision (all digits)
 console.log(factorial(70));
 
 // Calculate factorial(n) ... using big number calculations
